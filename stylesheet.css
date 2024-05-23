@@ -1,0 +1,450 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+img,
+div,
+ul,
+li,
+img,
+footer{
+    margin: 0;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    color: white;
+    /*font-family: Timeless;*/
+    background-color: #000000;
+}
+
+html {
+  /*scroll-behavior: smooth;*/
+}
+
+@font-face {
+    font-family: cd-Bold;
+    src: url(fonts/Cinzel-Bold.otf);
+}
+@font-face {
+    font-family: sitka;
+    src: url(fonts/sitka-small-599.ttf);
+}
+@font-face {
+    font-family: Timeless;
+    src: url(fonts/Timeless.ttf);
+}
+
+body {
+    background-color: #000000;
+}
+
+header {
+    height: 8em;
+}
+
+h1 {
+    font-family: cd-Bold;
+    /*background-color: aqua;*/
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    letter-spacing: 0.1em;
+}
+
+nav {
+    /*background: red;*/
+    font-family: Timeless;
+    float: right;
+    width: 50%;
+    height: 100%;
+    align-content: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+nav li {
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+}
+
+nav a:hover {
+    opacity: 0.5;
+    transition-duration: 0.1s;
+}
+
+
+/* ------ OLD REFERENCES ------- */
+
+/*h1, h2, h3 {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 100%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 7em;
+    display: block;  
+    font-family: mt-bold;
+    color: white;
+    line-height: 1em;
+    width: 100%;
+}
+
+h1{
+    top: 3em
+}
+
+h1 a{
+    font-family: mt-bold;
+}
+
+h2 {
+    top: 7.5em;
+    left: 50%;
+    font-size: 2em;
+    font-family: mt-regular;
+}
+
+h3{
+    top: 0.5em;
+}
+
+/*--iframe{
+    float: right;
+    padding-right: 5em;
+    padding-top: 12em;
+    height: inherit;
+    width: 50em;
+    height: 28.15em;
+}--*/
+
+/*.topicons{
+    position: fixed;
+    top: 50;
+    left: 50;
+    z-index: 1;
+}
+
+.topicons img{
+    width: 3em;
+}
+
+
+#page0, #page1, #page2, #page3{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #2a6592;
+}
+
+#page1{
+    background-color: #ff2638;
+}
+
+#page2{
+    background-color: #2a6592;
+    height: auto;
+    min-height: 100vh;
+}
+
+#page3{
+    background-color: #1f1f1f;
+}
+
+footer{
+    background-color: #484041;
+}
+
+#page3 p{
+    text-align: center;
+    margin-top: 2em;
+}
+
+/*---Video content---*/
+/*iframe{
+    float: right;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 40%;
+    height: 26.77em;
+}
+
+.page-content{
+    width: 100%;
+    padding-top: 12em;
+}
+
+.page-content p{
+    float: left;
+    width: 40%;
+    text-align: center;
+    padding-top: 8em;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.5em
+}
+
+/*---Artstation---*/
+
+/*.artstation-container{
+    margin-top: 5em;
+    margin-left: 5%;
+    width: 55%;
+    display: grid;
+    grid-column-gap: 0.25em;
+    grid-template-columns: auto auto auto;
+}
+.artstation-item{
+    
+}
+.artstation-item img{
+    width: 100%;
+    filter: grayscale(0%);
+}
+
+#page2 p{
+    margin-top: 17em;
+    float: right;
+    width: 30%;
+    text-align: center;
+    font-size: 1.5em;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+/*---HOVER---*/
+
+/*a:hover {
+    color: black;
+    opacity: 0.8;
+    transition-duration: 0.1s;
+}
+
+.topicons img:hover{
+    filter: invert();
+    transition-duration: 0.1s;
+}
+
+.artstation-item a:hover{
+    opacity: 0.5;
+}*/
+
+/*----------------------------ABOUT------------------------------*/
+/*#about h1{
+    top: 0.5em;
+    margin: 0;
+    margin-top: 0;
+}
+h4{
+    text-align: center;
+    font-size: 3em;
+    font-family: mt-bold;
+}
+#about-page{
+    min-height: 100vh;
+}
+
+#about-me-container{
+    margin-top: 1em;
+}
+
+#about-me{
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+}
+#return{
+    display: inline-block;
+}
+#return div{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 12em;
+}
+#return:hover p, #return:hover img{
+    filter: invert();
+    transition-duration: 0.1s;
+}
+
+#return div img{
+    display: inline-block;
+    width: 3em;
+}
+#return div p{
+    display: inline-block;
+    height: 100%;
+    padding-top: 1em;
+}
+
+#albin_image{
+    display: block;
+    width: 15em;
+    height: 15em;
+    margin: auto;
+    margin-top: 2em;
+    background-color: white;
+}
+#albin_image img{
+    padding-top: .5em;
+    display: block;
+    width: 14em;
+    margin: auto;
+}
+
+#cv{
+    float: right;
+    width: 40%;
+    height: 50em;
+    margin-right: 5%;
+    
+}
+#cv iframe{
+    float: none;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    height: 100%;
+}*/
+
+/*-----------------------------------------ARTICLES--------------------------------------------*/
+/*.article{
+    margin-left: 20em;
+    margin-right: 20em;
+}
+
+.horizontal-container{
+    background-color: beige;
+    margin: auto;
+    width: 100%;
+    display: flex;
+}
+
+.vertical-container img {
+    #flex: 33.33%;  
+#    width: 100%;
+    display: flex;
+    margin: 1em;
+}
+
+.horizontal-container img {
+    box-sizing: -box;
+    flex: 33.33%;  
+    width: 1;
+    margin: 1em;
+
+}
+
+.vertical-container{
+    background-color: orange;
+    text-align: center;
+}*/
+
+
+
+
+/*------------------------------------------MOBILE---------------------------------------------*/
+/*@media only screen and (max-width: 1000px) {
+h1, h2, h3 {
+    width: 100%;
+    font-size: 3em;
+}
+    
+h1{
+    top: 5em;
+}
+
+h2 {
+    top: 13em;
+    left: 50%;
+    font-size: 1em;
+    font-family: mt-regular;
+}
+    
+iframe{
+    float: none;
+    padding-right: 0;
+    padding-left: 0;
+    top: 0;
+    width: 100%;
+}
+    
+.page-content{
+    padding-top: 1em;
+}
+
+.page-content p{
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1em;
+}
+    
+.topicons{
+    position: absolute;
+}
+    
+.artstation-container{
+    margin: auto;
+    margin-top: 0em;
+    width: 100%;
+    display: grid;
+    grid-column-gap: 0.2em;
+    grid-template-columns: auto auto;
+}
+    
+#page2 p{
+    margin-top: 1em;
+    float: none;
+    width: 90%;
+    text-align: center;
+    font-size: 1em
+}
+#page3 h3{
+    top: 1em;
+}*/
+/*----------------------------ABOUT - MOBILE------------------------------*/
+/*#about-page{
+    position: absolute;
+    margin-top: 0em;
+}
+h4{
+    font-size: 2em;
+}
+#return{
+    width: 100%;
+}
+#return div{
+    margin: auto;
+}
+#albin_image{
+    margin-top: 0em;
+}
+#about h1{
+    top: 0.5em;
+    font-size: 12vw;
+}
+    
+#about-me{
+    float: none;
+    width: 90%;
+}
+
+#cv{
+    float: none;
+    width: 90%;
+    margin-right: 0;
+    margin-left: 5%;
+    margin-top: 2em;
+}
+}*/
