@@ -19,20 +19,23 @@ footer{
     /*font-family: Timeless;*/
     background-color: #000000;
     box-sizing: border-box;
-
 }
 
-/*html {
-  scroll-behavior: smooth;
-}*/
+img{
+    pointer-events: none;
+}
 
 @font-face {
-    font-family: cd-Bold;
-    src: url(fonts/Cinzel-Bold.otf);
+    font-family: Cinzel;
+    src: url(fonts/Cinzel-Regular.otf);
 }
 @font-face {
-    font-family: sitka;
+    font-family: Sitka;
     src: url(fonts/sitka-small-599.ttf);
+}
+@font-face {
+    font-family: Optimus;
+    src: url(fonts/OptimusPrinceps.ttf);
 }
 @font-face {
     font-family: Timeless;
@@ -44,37 +47,59 @@ body {
 }
 
 header {
-    height: 8em;
+    height: 3em;
+    position: fixed;
+    width: 100%;
+    background-color:rgba(0,0,0,0);
+    background-image: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 95%);
+    padding: 1rem;
+    z-index: 10;
+    display: flex;
 }
 
-h1 {
-    font-family: cd-Bold;
+header .h1 {
+    font-family: Optimus;
     /*background-color: aqua;*/
     float: left;
-    width: 50%;
-    height: 100%;
     text-align: center;
     align-content: center;
     letter-spacing: 0.1em;
+    background-color:rgba(0,0,0,0);
+    flex-grow: 1;
+    font-size: 2.5rem;
+}
+
+.h1 a{
+    background-color:rgba(0,0,0,0);
 }
 
 nav {
     /*background: red;*/
     font-family: Timeless;
     float: right;
-    width: 50%;
-    height: 100%;
     align-content: center;
     vertical-align: middle;
     text-align: center;
+    background-color:rgba(0,0,0,0);
+    flex-grow: 1;
 }
 
+ul, li, li p, li a{
+    background-color:rgba(0,0,0,0);
+}
 
 nav li {
     text-decoration: none;
     display: inline-block;
-    margin: auto;
+    margin: 0.2rem;
+    font-size: 1.2rem;
+    background-color:rgba(0,0,0,0);
 }
+
+#toggle-nav {
+    display: none;
+}
+
 
 nav a:hover {
     opacity: 0.5;
@@ -83,101 +108,192 @@ nav a:hover {
 
 /* Banner */
 .banner{
-    background-color: blue;
     padding: 0px;
     margin: 0px;
     width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 .banner img{
+    position: relative;
     width: 100%;
-    margin: 0;
-    display: block;
-    object-fit: contain;
 }
 
-/* Portfolio body */
-/*.portfolio-body{
-    background-color: orange;
-    padding: 2em;
-}*/
 
-
-.row{
-    margin:0px;
-    display: flex;
-    flex-direction: row;
-}
-
-/*.image-block{
-    display: inline-block;
-    flex-grow: 1;
-    margin: 5px;
-}*/
-
-.row img{
-    flex-grow: 1;
-    width: 25%;
-    display: inline-block;
-    margin: 0px;
-    object-fit: cover;
-}
-
-/* ------ NEW GALLERY ------- */
+/* ------ IMAGE GALLERY ------- */
 
 .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    list-style: none;
+    columns: 1rem 3;
+    gap: 0.2rem;
+    
+}
+
+.image-gallery img {
+    width: 100%;
+    display:block;
+}
+
+/* ------ FIRST PAGE ------- */
+.header-text{
+    text-align: center;
+    font-size: 2.5rem;
     font-family: Timeless;
-      text-align: center;
 }
 
-.image-gallery > li {
-  flex: 1 1 auto; /* or flex: auto; */
-  height: 300px;
-  cursor: pointer;
-  position: relative;
+.projects-promo-container{
+    margin: 1rem;;
 }
 
-.image-gallery::after {
-  content: "";
-  flex-grow: 999;
+.projects-promo-row{
+    display: flex;
 }
 
-.image-gallery li img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-  border-radius: 5px;
+.projects-promo{
+    width: 50%;
+    aspect-ratio: 21/9;
+    overflow: hidden;
+    margin: 0.2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: aquamarine;
 }
 
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(57, 57, 57, 0.502);
-  top: 0;
-  left: 0;
-  transform: scale(0);
-  transition: all 0.2s ease-in-out;
-  color: #fff;
-  border-radius: 5px;
-  /* center overlay content */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+projects-promo-img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
-/* hover */
-.image-gallery li:hover .overlay {
-  transform: scale(1);
+.projects-promo img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.projects-promo p{
+    width: 100%;
+    position: absolute;
+    background-color:rgba(0,0,0,0);
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.9) 95%);
+    bottom: 0;
+    right: 0;
+    font-size: 1rem;
+    font-family: Timeless;
+    padding: 1rem;
+    z-index: 3;
+    letter-spacing: 0.1em;
+}
+
+.projects-promo .img-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0%;
+    transition: 0.5s;
+
+}
+
+.projects-promo:hover .img-top {
+      opacity: 100%;
+}
+
+/* ------ PROJECT PAGE ------- */
+#project-header{
+    width: 100%;
+    background-color: orange;
+
+}
+
+#project-header img{
+    width: 100%;
+    height: 100%;   
+    object-fit:contain;    
+    background-color: blue;
 }
 
 
-/* ------ OLD REFERENCES ------- */
+/* ------ FOOTER ------- */
+footer{
+    height: 200rem;
+}
+
+/*------------------------------------------MOBILE---------------------------------------------*/
+@media only screen and (max-width: 1000px) {
+
+    header{
+        padding: 0;
+        display:block;
+        height: 5rem;
+    }
+    
+    .h1 a{
+        flex-flow: row;
+        font-size: 1.5rem;
+        text-align: left;
+        margin: 1rem;
+
+    }
+    
+    header .h1{
+        margin: 1rem;
+    }
+    
+
+    nav{
+        background-color: black;
+    }
+    
+        
+    #nav-list{
+        position: fixed;
+        display: none;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    #nav-list ul{
+        flex-grow: 1;
+    }
+    
+    
+    nav li {
+        display: block;
+        height: 2.3rem;
+        flex-grow: 1;
+        font-size: 2rem;
+    }
+    
+    .nav-list-seperator{
+        display: none;
+    }
+
+
+    #toggle-nav {
+        display: block;
+        float: right;
+        top: 0;
+        z-index: 9;
+        position: relative;
+        background-color:rgba(0,0,0,0);
+
+    }
+    
+    #toggle-nav img {
+        width: 4.4rem;
+        z-index: 10;
+        background-color:rgba(0,0,0,0);
+        padding: 1rem;
+    }
+
+}
+
+/* ------ OLD - FOR REFERENCE ------- */
 
 /*h1, h2, h3 {
     position: relative;
