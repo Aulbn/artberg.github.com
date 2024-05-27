@@ -126,23 +126,56 @@ nav a:hover {
 .image-gallery {
     columns: 1rem 3;
     gap: 0.2rem;
-    
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
 }
 
 .image-gallery img {
     width: 100%;
-    display:block;
+    display: block;
+    margin-top: .2rem;
+}
+
+.image-gallery-item{
+    position: relative;
+}
+
+.image-gallery-item img{
+    position: relative;
+    transition-duration: 0.2s;
+}
+
+.image-gallery-item p {
+    font-family: Timeless;
+    font-size: 1.5rem;
+    width: 100%;
+    bottom: 0;
+    position: absolute;  
+    text-align: left;
+    transition-duration: 0.2s;
+    background-color:rgba(0,0,0,0);
+    opacity: 0;
+    padding: 1rem;
+}
+
+.image-gallery-item:hover img {
+    opacity: 0.5;
+}
+
+.image-gallery-item:hover p {
+    opacity: 1;
 }
 
 /* ------ FIRST PAGE ------- */
 .header-text{
     text-align: center;
     font-size: 2.5rem;
-    font-family: Timeless;
+    font-family: Optimus;
+    letter-spacing: 0.1em;
 }
 
 .projects-promo-container{
-    margin: 1rem;;
+    margin: 1rem;
 }
 
 .projects-promo-row{
@@ -157,14 +190,13 @@ nav a:hover {
     display: flex;
     align-items: center;
     position: relative;
-    background-color: aquamarine;
 }
 
-projects-promo-img{
+.projects-promo a{
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    height: 100%;
+    z-index: 5;
+    background-color:rgba(0,0,0,0);
 }
 
 .projects-promo img{
@@ -196,7 +228,6 @@ projects-promo-img{
     z-index: 2;
     opacity: 0%;
     transition: 0.5s;
-
 }
 
 .projects-promo:hover .img-top {
@@ -204,16 +235,41 @@ projects-promo-img{
 }
 
 /* ------ PROJECT PAGE ------- */
-#project-header{
+#project-banner{
     width: 100%;
     background-color: orange;
 
 }
 
-#project-header img{
+#project-banner img{
     width: 100%;
     height: 100%;   
     object-fit:contain;    
+}
+
+.hide-mobile{
+    display: block;
+}
+
+.hide-pc{
+    display: none;
+}
+
+#project-intro{
+    
+    font-family: Timeless;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* ------ PROJECT PAGE ------- */
+#header-background-padding{
+    width: 100%;
+    height: 5rem;
+    background-color: black;
 }
 
 
@@ -246,6 +302,7 @@ footer{
 
     nav{
         background-color: black;
+        padding-top: 2rem;
     }
     
         
@@ -253,7 +310,7 @@ footer{
         position: fixed;
         display: none;
         width: 100%;
-        z-index: 2;
+        z-index: 1;
     }
     
     #nav-list ul{
@@ -265,7 +322,7 @@ footer{
         display: block;
         height: 2.3rem;
         flex-grow: 1;
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
     
     .nav-list-seperator{
@@ -288,6 +345,33 @@ footer{
         z-index: 10;
         background-color:rgba(0,0,0,0);
         padding: 1rem;
+    }
+    
+    /* ------ FIRST PAGE ------- */
+    .header-text{
+        font-size: 1.5rem;
+    }
+    
+    /*.projects-promo p{
+        font-size: 0.5rem;
+        padding: 0.5rem;
+    }*/
+    
+    /* ------ IMAGE GALLERY ------- */
+
+    .image-gallery {
+        columns: 1rem 2;
+        gap: 0.2rem; 
+    }
+    
+    /* ------ PROJECT PAGE ------- */
+    
+    .hide-mobile{
+        display: none;
+    }
+    
+    .hide-pc{
+        display: block;
     }
 
 }

@@ -11,35 +11,83 @@
 
 <body id="portfolio">
     <header>
-        <h1><a href="index.html">JULIA AHLBERG</a></h1>
-        <nav>
+        <p class="h1"><a href="index.html">Julia Ahlberg</a></p>
+                <a href="javascript:void(0);" id="toggle-nav" onclick="myFunction()"><img src="images/hamburger_icon.png"></a>
+        <nav id="nav-list">
             <ul>
                 <li><a href="index.html">PROJECTS</a></li>
-                <li><p>|</p></li>
+                <li class="nav-list-seperator"><p>|</p></li>
                 <li><a href="index.html">CONCEPTS</a></li>
-                <li><p>|</p></li>
+                <li class="nav-list-seperator"><p>|</p></li>
                 <li><a href="index.html">3D</a></li>
-                <li><p>|</p></li>
+                <li class="nav-list-seperator"><p>|</p></li>
                 <li><a href="index.html">ILLUSTRATIONS</a></li>
-                <li><p>|</p></li>
+                <li class="nav-list-seperator"><p>|</p></li>
                 <li><a href="index.html">ABOUT</a></li>
             </ul>
         </nav>
     </header>
     
-    <div class="banner">
-        <img src="images/julia-ahlberg-final-hugo-cover-1.jpg">
+    <div id="header-background-padding"></div>
+    
+    <div class="image-gallery"> 
+        <a class="image-gallery-item" href="index.html">
+            <p>Feather Girl</p>
+            <img src="images/julia-ahlberg-feather-song-close-up.jpg">
+        </a>
+        <a class="image-gallery-item" href="index.html">
+            <p>Robo Boy</p>
+            <img src="images/julia-ahlberg-final-hugo-cover-1.jpg">
+        </a>
+        <a class="image-gallery-item" href="index.html">
+            <p>Title</p>
+            <img src="images/julia-ahlberg-kaia.jpg">
+        </a>
+        <a class="image-gallery-item" href="index.html">
+            <p>Title</p>
+            <img src="images/julia-ahlberg-rudgutter-sketches.jpg">
+        </a>
+        <a class="image-gallery-item" href="index.html">
+            <p>Title</p>
+            <img src="images/julia-ahlberg-front-close-up.jpg">
+        </a>
+        <a class="image-gallery-item" href="index.html">
+            <p>Title</p>
+            <img src="images/julia-ahlberg-portrait.jpg">
+        </a>
+        <a class="image-gallery-item" href="index.html">
+            <p>Title</p>
+            <img src="images/julia-ahlberg-the-golden-empress.jpg">
+        </a>
+        <a class="image-gallery-item" href="index.html">
+            <p>Title</p>
+            <img src="images/perdido-ambassador-sketches.jpg">
+        </a>
+        <a class="image-gallery-item" href="index.html">
+            <p>Title</p>
+            <img src="images/perdido-mayorrudgutter-illustration.jpg">
+        </a>
     </div>
     
-    <div class="portfolio-body">
-        <div class="image-gallery"> 
-            <img src="images/julia-ahlberg-feather-song-close-up.jpg">
-            <img src="images/julia-ahlberg-final-hugo-cover-1.jpg">
-            <img src="images/julia-ahlberg-kaia.jpg">
-            <img src="images/julia-ahlberg-mayorrudgutter-illustration.jpg">
-        </div>
+    <div>
+        <img>
     </div>
-
+    
+    <footer>
+    
+    </footer>
+    
+        <script>
+    function myFunction() 
+    {
+        var x = document.getElementById("nav-list");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }  
+    }
+    </script>
 </body>
 
 </html>
