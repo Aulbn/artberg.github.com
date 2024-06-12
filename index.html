@@ -7,39 +7,37 @@
     <link rel="icon" href="images/favico_2.png">
     <link rel="stylesheet" type="text/css" href="stylesheet.css?version=52">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/navbar.js"></script>
 </head>
 
-<body id="portfolio">
-    <header>
-        <p class="h1"><a href="index.html">Julia Ahlberg</a></p>
-                <a href="javascript:void(0);" id="toggle-nav" onclick="myFunction()"><img src="images/hamburger_icon.png"></a>
-        <nav id="nav-list">
-            <ul>
-                <li><a href="index.html">PROJECTS</a></li>
-                <li class="nav-list-seperator"><p>|</p></li>
-                <li><a href="index.html">CONCEPTS</a></li>
-                <li class="nav-list-seperator"><p>|</p></li>
-                <li><a href="index.html">3D</a></li>
-                <li class="nav-list-seperator"><p>|</p></li>
-                <li><a href="index.html">ILLUSTRATIONS</a></li>
-                <li class="nav-list-seperator"><p>|</p></li>
-                <li><a href="index.html">ABOUT</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="banner">
-        <img src="images/julia-ahlberg-final-hugo-cover-1.jpg">
+<body>
+    <div id="banner">
+        <header>
+            <div class="h1"><a  href="index.html">julia ahlberg</a></div>
+            <a href="javascript:void(0);" id="toggle-nav" onclick="toggleMobileNavbar()"><img src="images/hamburger_icon.png"></a>
+            <nav id="nav-list">
+                <ul>
+                    <li><a href="index.html">PROJECTS</a></li>
+                    <li><a href="index.html">MODELS</a></li>
+                    <li><a href="illustrations.html">ILLUSTRATIONS</a></li>
+                    <li><a href="index.html">ABOUT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <p>julia ahlberg</p>
+        <img src="images/MainMenu.jpg">
     </div>
+    
+    <!--img id="main-menu-background" src="images/MainMenu.jpg"-->
     
     <div class="projects-promo-container">
         <p class="header-text">Projects</p>
         <div class="projects-promo-row">
             <div class="projects-promo">
-                <a href="project-perdido.html"></a>
-                <p>SCIENCE GUY</p>
-                <img src="images/perdido-banner.jpg">
-                <img class="img-top" src="images/perdido-ambassador-sketches.jpg"> 
+                <a href="project-vrising.html"></a>
+                <p>V RISING</p>
+                <img src="images/vrising/projectBanner-vrising-mobile.png">
+                <img class="img-top" src="images/vrising/vrising-mainmenu01.png"> 
             </div>
                 <div class="projects-promo">
                     <a href="https://www.youtube.com/">
@@ -63,21 +61,71 @@
                 </a>
             </div>
         </div>
+        <a href="illustrations.html">Show All</a>
+    </div>
+    
+    
+    
+    
+    <div class="models-promo-container">
+        <p class="header-text">Models / Sculpts</p>
+            <div class="models-promo-row">	
+                    <div class="models-promo">
+                        <a href="project-vrising.html"></a>
+                        <p>V RISING</p>
+                        <img src="images/vrising/projectBanner-vrising-mobile.png">
+                        <img class="img-top" src="images/vrising/vrising-mainmenu01.png"> 
+                    </div>
+                    <div class="models-promo">
+                        <a href="https://www.youtube.com/">
+                        <p>LADY LADY LADYY</p>
+                        <img src="images/julia-ahlberg-portrait.jpg">
+                        </a>
+                    </div>
+                    <div class="models-promo">
+                        <a href="https://www.youtube.com/">
+                        <p>LADY LADY LADYY</p>
+                        <img src="images/julia-ahlberg-portrait.jpg">
+                    </a>
+                </div>
+            </div>
+        <a href="illustrations.html">Show All</a>
+    </div>
+    
+    
+    
+    
+    
+    <div class="projects-promo-container">
+        <p class="header-text">Illustrations / Concepts</p>
+    <div class="image-gallery">
+        <a class="image-gallery-item" href="index.html">
+            <p>Feather Girl</p>
+            <img src="images/julia-ahlberg-feather-song-close-up.jpg">
+        </a>
+        <a class="image-gallery-item" href="index.html">
+            <p>Robo Boy</p>
+            <img src="images/julia-ahlberg-final-hugo-cover-1.jpg">
+        </a>
+        <a class="image-gallery-item" href="index.html">
+            <p>Title</p>
+            <img src="images/julia-ahlberg-rudgutter-sketches.jpg">
+        </a>
+        <a class="image-gallery-item" href="index.html">
+            <p>Title</p>
+            <img src="images/julia-ahlberg-front-close-up.jpg">
+        </a>
+        <a class="image-gallery-item" href="index.html">
+            <p>Title</p>
+            <img src="images/julia-ahlberg-portrait.jpg">
+        </a>
+        <a class="image-gallery-item" href="index.html">
+            <p>Title</p>
+            <img src="images/perdido-ambassador-sketches.jpg">
+        </a>
+    </div>
     </div>
     
     <footer></footer>
-                                                                 
-    <script>
-    function myFunction() 
-    {
-        var x = document.getElementById("nav-list");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }  
-    }
-    </script>
-                                                                 
 </body>
 </html>

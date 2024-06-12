@@ -7,29 +7,25 @@
     <link rel="icon" href="images/favico_2.png">
     <link rel="stylesheet" type="text/css" href="stylesheet.css?version=52">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/navbar.js"></script>
 </head>
 
-<body id="portfolio">
+<body>
     <header>
-        <p class="h1"><a href="index.html">Julia Ahlberg</a></p>
-                <a href="javascript:void(0);" id="toggle-nav" onclick="myFunction()"><img src="images/hamburger_icon.png"></a>
+        <div class="h1"><a  href="index.html">julia ahlberg</a></div>
+        <a href="javascript:void(0);" id="toggle-nav" onclick="toggleMobileNavbar()"><img src="images/hamburger_icon.png"></a>
         <nav id="nav-list">
             <ul>
                 <li><a href="index.html">PROJECTS</a></li>
-                <li class="nav-list-seperator"><p>|</p></li>
-                <li><a href="index.html">CONCEPTS</a></li>
-                <li class="nav-list-seperator"><p>|</p></li>
-                <li><a href="index.html">3D</a></li>
-                <li class="nav-list-seperator"><p>|</p></li>
-                <li><a href="index.html">ILLUSTRATIONS</a></li>
-                <li class="nav-list-seperator"><p>|</p></li>
+                <li><a href="index.html">MODELS</a></li>
+                <li class="underline"><a href="illustrations.html">ILLUSTRATIONS</a></li>
                 <li><a href="index.html">ABOUT</a></li>
             </ul>
         </nav>
     </header>
     
     <div id="header-background-padding"></div>
-    
+        
     <div class="image-gallery"> 
         <a class="image-gallery-item" href="index.html">
             <p>Feather Girl</p>
@@ -76,18 +72,6 @@
     <footer>
     
     </footer>
-    
-        <script>
-    function myFunction() 
-    {
-        var x = document.getElementById("nav-list");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }  
-    }
-    </script>
 </body>
 
 </html>
