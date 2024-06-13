@@ -35,7 +35,7 @@ img{
 }
 
 body {
-    background-color: #15292c;
+    background-color: #15282C;
 }
 
 /* Banner */
@@ -340,16 +340,58 @@ models-promo a{
     letter-spacing: 0.1em;
 }
 
-.models-promo .img-top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
+.img-top{
     opacity: 0%;
     transition: 0.5s;
+    z-index: 1;
+}
+
+.models-promo .img-top {
+    position: absolute;
+    height: 100%;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .models-promo:hover .img-top {
+      opacity: 100%;
+}
+
+.see-all-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
+.see-all-button .line{
+    flex-grow: 1;
+    background-color: white;
+    height: 1px;
+    margin: 2rem;
+}
+
+.see-all-button img {
+    width: 100%;
+    position: absolute;
+}
+
+.see-all-button a {
+    width: 15rem;
+    position: relative;
+    pointer-events: all;
+    height: 4rem;
+}
+
+.see-all-button .img-top {
+    transition: 0.2s;
+
+}
+
+.see-all-button a:hover .img-top{
       opacity: 100%;
 }
 
@@ -416,7 +458,7 @@ models-promo a{
 #header-background-padding{
     width: 100%;
     height: 7rem;
-    background-color: black;
+    #background-color: black;
 }
 
 
@@ -430,8 +472,15 @@ footer{
 
     header{
         padding: 0;
-        display:block;
+        display: flex;
         height: 5rem;
+    }
+    
+        
+    header .h1{
+        margin: 0rem;
+        width: auto;
+        flex-grow: 1;
     }
     
     .h1 a{
@@ -439,17 +488,17 @@ footer{
         font-size: 1.5rem;
         text-align: left;
         margin: 1rem;
-
+        font-size: 1rem;
+        vertical-align: middle;
     }
-    
-    header .h1{
-        margin: 1rem;
-    }
-    
 
+    
     nav{
-        background-color: black;
+        background-color: #15282C;
         padding-top: 2rem;
+        width: 100%;
+        z-index: 5;
+        height: 100vh;
     }
     
         
@@ -458,40 +507,42 @@ footer{
         display: none;
         width: 100%;
         z-index: 1;
+        padding: 2rem;
     }
     
     #nav-list ul{
-        flex-grow: 1;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        padding: 0;
     }
     
     
-    nav li {
+    #nav-list ul li {
         display: block;
         height: 2.3rem;
-        flex-grow: 1;
         font-size: 1.2rem;
-    }
-    
-    .nav-list-seperator{
-        display: none;
+        margin: auto;
+        padding: inherit;
+        margin-bottom: 2rem;
     }
 
 
     #toggle-nav {
         display: block;
         float: right;
-        top: 0;
-        z-index: 9;
-        position: relative;
+        z-index: 11;
         background-color:rgba(0,0,0,0);
-
+        width: 4rem;
+        position: relative;
     }
     
     #toggle-nav img {
-        width: 4.4rem;
-        z-index: 10;
+        width: 100%;
         background-color:rgba(0,0,0,0);
-        padding: 1rem;
+        margin: auto;
+        #padding: 1rem;
+        display: block;
     }
     
     /* ------ FIRST PAGE ------- */
