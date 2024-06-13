@@ -229,9 +229,9 @@ nav a:hover {
     letter-spacing: 0.1em;
 }
 
-.projects-promo-container{
+.promo-container{
     margin: 1rem;
-    margin-top: 5rem;
+    margin-bottom: 10rem;
 }
 
 .projects-promo-row{
@@ -240,7 +240,7 @@ nav a:hover {
 
 .projects-promo{
     width: 50%;
-    aspect-ratio: 21/9;
+    aspect-ratio: 24/9;
     overflow: hidden;
     margin: 0.2rem;
     display: flex;
@@ -290,11 +290,6 @@ nav a:hover {
 }
 
 /* - MODELS SECTION - */
-.models-promo-container{
-    margin: 1rem;
-    margin-top: 5rem;
-}
-
 .models-promo-row{
     display: flex;
 }
@@ -380,7 +375,7 @@ models-promo a{
 }
 
 .see-all-button a {
-    width: 15rem;
+    width: 14rem;
     position: relative;
     pointer-events: all;
     height: 4rem;
